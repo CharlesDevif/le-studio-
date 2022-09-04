@@ -1,0 +1,851 @@
+$bleu: #050091;
+$voilet: #6804c0;
+$rose: #FE00FF;
+$noir: #050091;
+$blanc: #f1f1f1;
+
+
+@font-face {
+    font-family: "mblack";
+    src: url(../typo/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "mregu";
+    src: url(../typo/Montserrat-Regular.ttf);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+body {
+    margin: 0%;
+    background-color: black;
+}
+.titleSection{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: $blanc;
+    font-family: "mregu";
+}
+
+#barNav {
+    z-index: 9999;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "mregu";
+}
+
+#barNav svg {
+    margin-left: 1rem;
+}
+
+#navUl {
+    width: 40%;
+    color: #fff;
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+
+
+}
+
+#navUl li {
+    padding: .5rem;
+}
+
+#navUl li:hover {
+    background-color: rgb(114, 114, 114);
+
+
+}
+
+#Conextion {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#Conextion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#warpA {
+    width: 50%;
+}
+
+#iconNav {
+    font-size: 1.2rem;
+    width: 15%;
+    color: #fff;
+}
+
+#textHead {
+    font-family: "mregu";
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 45rem;
+}
+
+#vodHead {
+
+    top: 0%;
+    width: 100%;
+    filter: blur(4px) brightness(0.6);
+
+}
+
+#textHead h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0%;
+}
+
+#textHead h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0%;
+}
+
+#textHead button {
+    font-family: "mregu";
+    color: #FE00FF;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 12rem;
+}
+
+#tilteFormule {
+    position: relative;
+    bottom: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#tilteFormule h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "mregu";
+    font-weight: 900;
+}
+
+#tilteFormule p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "mregu";
+}
+
+#sectionFormules {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "mregu";
+
+}
+
+.formule {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 4px;
+    border-image: linear-gradient(0.25turn, #050091, #6804c0, #FE00FF) 90;
+
+
+}
+
+.titleFormule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(0.25turn, #050091, #6804c0, #FE00FF);
+    width: 100%;
+    height: 100px;
+
+
+}
+
+.titleFormule h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.titleFormule p {
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.h2Formule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+.h2Formule h2 {
+    margin: 0;
+
+}
+
+.pFormules {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.pFormules p {
+    margin-top: 0;
+    margin: bottom 1px;
+    ;
+    font-size: 2rem;
+}
+
+.borderFormule {
+    height: 5px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(0.25turn, #050091, #6804c0, #FE00FF);
+
+}
+
+#fomuleAlumno {
+    display: flex;
+    margin-top: 10rem;
+    background: linear-gradient(0.25turn, #FE00FF, #6804c0, #050091);
+    font-family: "mregu";
+    color: #fff;
+}
+
+#alumno {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pForfait {
+    font-weight: 900;
+    font-size: 1.5bnlrem;
+}
+
+#alumno h2 {
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+#alumno h3 {
+    font-size: 2rem;
+}
+
+#refOffre {
+    opacity: 50%;
+}
+
+#divPrixAlumno {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prixAlumno {
+    border-radius: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 35%;
+    color: black;
+    background-color: #fff;
+}
+
+.prixAlumno p {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#butAlumno {
+    width: 25%;
+    font-family: "mregu";
+    color: #FE00FF;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 12rem;
+}
+
+#imgAlumno img {
+    width: 100%;
+    position: relative;
+    bottom: -.27rem;
+}
+
+#service {
+    display: flex;
+}
+
+#divService {
+    color: #fff;
+}
+
+#headDiv {
+    display: flex;
+    color: #fff;
+}
+
+//-------------------------------------------------------------------- !!!  Service  !!! ------------------------------------------------------------------------
+#sectionService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridService{
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: "mregu";
+    
+}
+#serviceStream{
+    width: 70%;
+    height: 20rem;
+}
+#serviceStream img{
+    width: 30%;
+}
+
+.Service {
+    display: flex;
+    background-image: linear-gradient(to right, #000000, #31061e, #540044, #6c007a, #6804c0);
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.divServiceResponsive {
+    display: none;
+}
+
+.ServiceImg {
+    width: 40%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.ServiceImgRight {
+    width: 36%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.ServiceContent {
+    width: 46%;
+    margin: 2rem auto;
+}
+
+.ServiceContent h3 {
+    font-family: "mregu";
+    color: white;
+    font-size: 1.5rem;
+}
+
+.ServiceContent .ServiceContentText {
+    font-family: "mregu";
+    font-size:1rem;
+    color: white;
+    margin: 1rem 0 .5rem 0;
+    line-height: 1.5;
+}
+
+.ServiceAvatar {
+    display: flex;
+    align-items: center;
+}
+
+.ServiceAvatar .ServiceAvatarImg {
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.ServiceAvatar .ServiceAvatarInfo {
+    line-height: 1.5;
+}
+
+.ServiceAvatar .ServiceAvatarName {
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.ServiceAvatar .ServiceAvatarDate {
+    font-size: 0.5rem;
+    color: hsl(212, 23%, 69%);
+}
+
+.ServiceAvatar .ServiceAvatarShare {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50rem;
+    padding: 0.8rem;
+    margin-left: auto;
+}
+
+
+//-------------------------------------------------------------------- !!!  Service_RESPONSIVE  !!!-------------------------------------------------------------------
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .divServiceResponsive {
+        display: block;
+    }
+
+    .divServiceDesktop {
+        display: none;
+    }
+
+
+    #sectionService {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Service {
+        flex-direction: column;
+    }
+
+    .ServiceImg {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .ServiceContent h3 {
+        font-size: 1.6rem;
+    }
+
+    .ServiceContent {
+        width: 78%;
+    }
+
+
+}
+
+
+//-------------------------------------------------------------------- !!!  ARTICLE  !!!-------------------------------------------------------------------
+#sectionArticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#divArticle {
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.divArticle {
+    width: 100%;
+
+
+
+}
+
+.article {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+   
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 100, 0.1) 0px 20px 25px -5px, rgba(124, 124, 124, 0.04) 0px 10px 10px -5px;
+}
+
+
+.articleImg {
+    width: 36%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+
+
+.articleContent {
+    width: 46%;
+    margin: 3rem auto;
+    font-family: "mregu";
+}
+
+.articleContent h3 {
+    color: $blanc;
+    font-size: 1.5rem;
+}
+
+.articleContent .articleContentText {
+    font-size: 1rem;
+    color: $blanc;
+    margin: 1rem 0 .5rem 0;
+    line-height: 1.5;
+}
+
+.articleAvatar {
+    display: flex;
+    align-items: center;
+}
+
+.articleAvatar .articleAvatarImg {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 30%;
+    margin-right: 1rem;
+}
+
+.articleAvatar .articleAvatarInfo {
+    line-height: 1.5;
+}
+
+.articleAvatar .articleAvatarName {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $blanc;
+}
+
+.articleAvatar .articleAvatarDate {
+    font-size: 0.9rem;
+    color: hsl(212, 23%, 69%);
+}
+
+.articleAvatar .articleAvatarShare {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50rem;
+    padding: 0.8rem;
+    margin-left: auto;
+}
+
+
+//-------------------------------------------------------------------- !!!  ARTICLE_RESPONSIVE  !!!-------------------------------------------------------------------
+
+
+
+@media screen and (max-width: 500px) {
+    .divArticleResponsive {
+        display: block;
+    }
+
+    .divArticleDesktop {
+        display: none;
+    }
+
+
+    #sectionArticle {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $bleu;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .articleImg {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .articleContent h1 {
+        font-size: 1.6rem;
+    }
+
+    .articleContent {
+        width: 78%;
+    }
+
+
+}
+
+//-------------------------------------------------------------------- !!!  NEWSLETTER  !!!-------------------------------------------------------------------
+#newsletterSection{
+    width: 100%;
+    color: $blanc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#newsletterSection img{
+    filter:opacity(50%);
+}
+.optionalParent{
+    margin-top: 1rem;
+}
+.optionalParent input{
+    background: linear-gradient(0.25turn, #050091, #6804c0, #FE00FF);
+}
+
+#textForm{
+    width: 50%;
+    font-family: "mregu";
+}
+#mcForm form{
+padding:0px 0 0px 0% !important ;
+}
+#imgForm{
+    width: 50%;
+}
+#imgForm img{
+    width: 30%;
+}
+#icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+#icon svg{
+    width: 10%;
+}
+#divCheckRgpd{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+#checkRgpd{
+    margin-right: 1rem;
+}
+
+
+//-------------------------------------------------------------------- !!!  FORM  !!! ----------------------------------------------------------------------
+
+#formContact {
+    width: 70%;
+}
+
+#sectionForm {
+    margin-top: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+}
+#sectionForm h2 {
+    font-size: 3rem;
+    font-family: "mregu";
+    color: $blanc;
+    margin: 0;
+}
+#sectionForm p {
+    font-size: 1.5;
+    font-family: "mregu";
+    color: $blanc;
+    width: 50%;
+}
+
+
+
+#sectionForm div {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+#sectionForm input {
+    height: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(0.25turn, #700ac9, #5f175f);
+    border: none;
+    color: $blanc;
+    font-family: "mregu";
+
+
+}
+
+#sectionForm input::placeholder {
+    padding: 1rem;
+    color: #fff;
+    opacity: 1;
+    font-family: "mregu";
+
+}
+
+#inputName {
+    width: 47%;
+
+
+}
+
+#inputName {
+    width: 47%;
+
+}
+
+#inputEmail {
+    width: 47%;
+}
+
+#inputMessage {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(0.25turn, #700ac9, #5f175f);
+    border: none;
+    color: $blanc;
+    font-family: "mregu";
+
+}
+
+#inputMessage::placeholder {
+    padding: 1rem;
+    color: #fff;
+    opacity: 1;
+    font-family: "mregu";
+}
+
+button {
+    cursor: pointer;
+}
+#divButtonSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#buttonSubmit {
+    color: $blanc;
+    font-weight: 900;
+    font-size: 1rem;
+    width: 30%;
+    background: linear-gradient(0.25turn, #050091, #6804c0, #FE00FF);
+    border: none;
+    border-radius: 9px;
+    height: 3rem;
+    font-family: "mregu";
+    font-weight: 300;
+
+
+
+}
+
+//-------------------------------------------------------------------- !!!  FORM_RESPONSIVE  !!! ----------------------------------------------------------------------
+
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 98%;
+    }
+
+    #sectionForm div {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inputName {
+        width: 100%;
+
+    }
+
+    #inputEmail {
+        width: 100%;
+    }
+}
+
+
+//-------------------------------------------------------------------- !!!  FOOTER  !!!-------------------------------------------------------------------
+
+footer{
+    font-family: "mregu";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $blanc;
+    background-color: rgb(27, 27, 27);
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+    color: $blanc;
+}
+#contactFooter{
+margin-left: 1rem;
+}
+#retourHaut{
+    margin-right: 1rem;
+}
+#retourHaut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
